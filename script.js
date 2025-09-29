@@ -12,7 +12,7 @@ button.addEventListener("click",(e)=>{
 		para.push("name=" + encodeURIComponent(nameInput.value.trim()));
 	}
 	if(yearInput.value.trim()){
-		para.push("year" + encodeURIComponent(yearInput.value.trim()));
+		para.push("year=" + encodeURIComponent(yearInput.value.trim()));
 	}
 	if (para.length > 0) {
 		baseUrl += "?" + para.join("&");
